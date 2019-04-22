@@ -42,7 +42,7 @@
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
-          var ldl = byCodes(('18262-6').;
+          var ldl = byCodes('18262-6').;
           var tre = byCodes('2571-8');
 
           var p = defaultPatient();
