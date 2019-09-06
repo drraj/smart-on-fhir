@@ -9,8 +9,7 @@ body {
 
 #holder {
   display: none;
-  color : 'Aqua';
-}
+  }
 
 .spinner {
   margin: 100px auto 0;
