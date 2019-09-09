@@ -40,6 +40,10 @@
           var height = byCodes('8302-2');
           var weight = byCodes('29463-7');
           var bmi = weight /(height/100*height/100);
+          
+              
+          
+          
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
@@ -87,6 +91,7 @@
       birthdate: {value: ''},
       height: {value: ''},
       weight: {value: ''},
+      bmi: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
@@ -132,7 +137,8 @@
     $('#birthdate').html(p.birthdate);
     $('#height').html(p.height);
     $('#weight').html(p.weight);
-    $('#systolicbp').html(p.systolicbp);
+    $('#bmi').html(p.bmi);
+     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
