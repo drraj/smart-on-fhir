@@ -61,6 +61,7 @@
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
           p.weight = getQuantityValueAndUnit(weight[0]);
+          p.bmi = bmi;
          
 
           if (typeof systolicbp != 'undefined')  {
