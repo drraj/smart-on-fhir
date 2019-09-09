@@ -43,6 +43,7 @@
           function claculatebmi(){
           
           var bmi = weight /(height/100*height/100);
+            console.log ('bmi');
           }
           
                        
