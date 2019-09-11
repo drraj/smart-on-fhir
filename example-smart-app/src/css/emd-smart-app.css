@@ -2,11 +2,14 @@ table {
   border-collapse: collapse;
   width: 600px;
 }
-th, td {
+th {
+  padding: 8px;
+  text-align: left;
+}
+td {
   padding: 8px;
   text-align: center;
 }
-
 body {
   margin: 0;
 }
