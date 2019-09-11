@@ -39,12 +39,9 @@
 
           var height = byCodes('8302-2');
           var weight = byCodes('29463-7');
-          
-                  
           var bmi = byCodes('39156-5');
             console.log (bmi);
-                
-                       
+                                   
           
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
@@ -59,7 +56,7 @@
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
           p.weight = getQuantityValueAndUnit(weight[0]);
-          p.bmi = getQuantityValueAndUnit(bmi[0]);;
+          p.bmi = getQuantityValueAndUnit(bmi[0]);
          
 
           if (typeof systolicbp != 'undefined')  {
