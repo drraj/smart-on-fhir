@@ -15,7 +15,7 @@
                     type: 'Observation',
                     query: {
                       code: {
-                        $or: ['http://loinc.org|8302-2', 'http://loinc.org|8462-4','http://loinc.org|39156-5',
+                        $or: ['http://loinc.org|8302-2', 'http://loinc.org|8462-4','http://loinc.org|39156-5','http://loinc.org|33914-3',
                               'http://loinc.org|8480-6', 'http://loinc.org|2085-9', 'http://loinc.org|29463-7','http://loinc.org|2571-8',
                               'http://loinc.org|18262-6', 'http://loinc.org|18262-6','http://loinc.org|55284-4']
                       }
@@ -40,15 +40,14 @@
           var height = byCodes('8302-2');
           var weight = byCodes('29463-7');
           var bmi = byCodes('39156-5');
-            console.log (bmi);
-                                   
+                                        
           
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('18262-6');
           var tre = byCodes('2571-8');
-
+          var gfr = byCodes('33914-3');
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
           p.gender = gender;
@@ -70,7 +69,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
            p.tre = getQuantityValueAndUnit(tre[0]);
-
+            p.gfr = getQuantityValueAndUnit(gfr[0]);
           ret.resolve(p);
         });
       } else {
@@ -92,6 +91,7 @@
       height: {value: ''},
       weight: {value: ''},
       bmi: {value: ''},
+      gfr: {value:''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
@@ -138,11 +138,13 @@
     $('#height').html(p.height);
     $('#weight').html(p.weight);
     $('#bmi').html(p.bmi);
+    
      $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#tre').html(p.tre);
+    $('#gfr').html(p.gfr);
   };
 
 })(window);
