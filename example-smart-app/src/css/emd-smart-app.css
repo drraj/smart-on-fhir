@@ -1,5 +1,9 @@
+table {
+  border-collapse: collapse;
+  width: 55%;
+}
 th, td {
-  padding: 5px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -60,8 +64,7 @@ body {
     color: #fff;  
 	height: 100%;
 	text-align: center;
-	width: 75%;
-}
+	}
 
 .patientresource h2 {
 	color: #fec72c;
@@ -82,8 +85,7 @@ body {
     color: #FFF8DC;  
 	height: 100%;
 	text-align: center;
-	width: 75%;
-}
+	}
 .observationresource h2 {
 	color: #fec72c;
 	z-index: 3;
