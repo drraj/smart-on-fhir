@@ -1,6 +1,6 @@
 th, td {
   padding: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 body {
@@ -59,6 +59,8 @@ body {
     margin-bottom: 15px;
     color: #fff;  
 	height: 100%;
+	text-align: center;
+	width: 75%;
 }
 
 .patientresource h2 {
@@ -69,6 +71,9 @@ body {
 	font-weight: 400;
 }
 
+.patientresource tr:hover {background-color: #ddd;}
+
+
 .observationresource {
 	position: relative;
     display: block;  
@@ -76,6 +81,8 @@ body {
     margin-bottom: 15px;
     color: #FFF8DC;  
 	height: 100%;
+	text-align: center;
+	width: 75%;
 }
 .observationresource h2 {
 	color: #fec72c;
@@ -84,3 +91,5 @@ body {
 	font-size: 24px;
 	font-weight: 400;
 }
+
+.observationresource tr:hover {background-color: #ddd;}
