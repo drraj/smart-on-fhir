@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;  
+  width:500px;  
 }
 th {
   padding: 8px;
@@ -10,6 +10,7 @@ th {
 td {
   padding: 8px;
   text-align: center;
+width: 80%;
 }
 body {
   margin: 0;
