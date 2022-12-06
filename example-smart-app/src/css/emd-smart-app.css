@@ -1,7 +1,18 @@
 table {
   border-collapse: seperate;
+  border-radius: 10px;
   table-layout: fixed;
   width:500px;  
+}
+table tr 
+{
+    border-radius: 10px;
+}
+
+table tr td
+{
+    border: 1px solid #744700;
+    border-radius: 10px;
 }
 th {
   padding: 8px;
