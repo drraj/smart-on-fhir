@@ -77,7 +77,8 @@
         onError();
       }
     }
-
+  console.log(weight1);
+    
     FHIR.oauth2.ready(onReady, onError);
     return ret.promise();
 
