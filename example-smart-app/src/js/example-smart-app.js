@@ -39,7 +39,6 @@
 
           var height = byCodes('8302-2');
           var weight = byCodes('29463-7');
-          var weight1 = weight.toFixed(2);
           var bmi = byCodes('39156-5');
                                         
           
@@ -77,8 +76,7 @@
         onError();
       }
     }
-  console.log(weight1);
-    
+       
     FHIR.oauth2.ready(onReady, onError);
     return ret.promise();
 
@@ -102,6 +100,10 @@
     };
   }
 
+  var weight1 = weight.toFixed(2);
+  console.log(weight1);
+  
+  
   function getBloodPressureValue(BPObservations, typeOfPressure) {
     var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
