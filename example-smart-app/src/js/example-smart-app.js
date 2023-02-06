@@ -99,10 +99,7 @@
       tre: {value: ''},
     };
   }
-
-  var weight1 = weight.toFixed(2);
-  console.log(weight1);
-  
+ 
   
   function getBloodPressureValue(BPObservations, typeOfPressure) {
     var formattedBPObservations = [];
@@ -141,7 +138,6 @@
     $('#birthdate').html(p.birthdate);
     $('#height').html(p.height);
     $('#weight').html(p.weight);
-     $('#weight1').html(p.weight1);
     $('#bmi').html(p.bmi);
     
      $('#systolicbp').html(p.systolicbp);
