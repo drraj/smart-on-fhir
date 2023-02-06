@@ -39,6 +39,7 @@
 
           var height = byCodes('8302-2');
           var weight = byCodes('29463-7');
+          var weight1 = weight.toFixed(2);
           var bmi = byCodes('39156-5');
                                         
           
@@ -137,6 +138,7 @@
     $('#birthdate').html(p.birthdate);
     $('#height').html(p.height);
     $('#weight').html(p.weight);
+     $('#weight').html(weight1);
     $('#bmi').html(p.bmi);
     
      $('#systolicbp').html(p.systolicbp);
