@@ -38,7 +38,7 @@
           }
 
           var height = byCodes('8302-2');
-          var weight = byCodes('29463-7');
+          var weight = byCodes('29463-7').toFixed(2);
           var bmi = byCodes('39156-5');
                                         
           
@@ -54,7 +54,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          p.weight = getQuantityValueAndUnit(weight[0].toFixed(2));
+          p.weight = getQuantityValueAndUnit(weight[0]);
           p.bmi = getQuantityValueAndUnit(bmi[0]);
          
 
