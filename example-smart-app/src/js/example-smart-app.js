@@ -149,5 +149,5 @@
   };
 
 })(window);
-
+console.log("byCodes:");
 console.log(byCodes("29463-7"));
