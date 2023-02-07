@@ -149,5 +149,4 @@
   };
 
 })(window);
-console.log("weight");
-console.log("weight.toFixed(2)");
+
