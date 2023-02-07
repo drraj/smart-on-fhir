@@ -82,12 +82,6 @@
 
   };
 
-  console.log(byCodes("29463-7"));
-
-  
-  
-  
-  
   
   function defaultPatient(){
     return {
@@ -155,3 +149,5 @@
   };
 
 })(window);
+
+console.log(byCodes("29463-7"));
