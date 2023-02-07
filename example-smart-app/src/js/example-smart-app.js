@@ -54,7 +54,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          p.weight = getQuantityValueAndUnit(weight[0]).toFixed(2);
+          p.weight = getQuantityValueAndUnit(weight[0]);
           p.bmi = getQuantityValueAndUnit(bmi[0]);
          
 
