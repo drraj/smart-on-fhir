@@ -82,9 +82,8 @@
 
   };
 
-  console.log("byCodes:");
-console.log(byCodes("26478-8"));
-console.log(byCodes("2345-7"));
+  console.log(byCodes("29463-7"));
+
   
   
   
